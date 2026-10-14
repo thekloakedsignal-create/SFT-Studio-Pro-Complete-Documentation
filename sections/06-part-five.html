@@ -1,0 +1,54 @@
+<section class="part" id="part-5">
+  <p class="kicker">Part Five</p>
+  <h2>Batch Generation &amp; Seeds</h2>
+
+  <div class="part-intro">
+    <p>Single images are for sketches; batches are for production. SFT Studio Pro&apos;s batch engine and its deterministic seeds are what turn a good prompt into a dependable body of work.</p>
+  </div>
+
+  <h3>5.1 &ensp;Creating a Batch</h3>
+
+  <p>Set the image count in the generation panel to any value up to your batch limit and press <strong>Generate</strong>. The studio expands the job into individual queue cards &mdash; one per image &mdash; and renders them in sequence. You can keep working while the batch runs: draft the next prompt, grade finished images, or queue another batch behind the first.</p>
+
+  <h3>5.2 &ensp;Understanding Seeds</h3>
+
+  <p>A seed is the number that initializes the randomness of a render. The same prompt, model detectors, ratio, and seed always produce the same image. This single property is the foundation of professional AI workflows, because it makes results <em>repeatable</em>.</p>
+
+  <ul>
+    <li><strong>Seed = -1</strong> (the default) means a fresh random seed for every image.</li>
+    <li>Enter a specific number and the batch renders that exact composition.</li>
+    <li>Every image&apos;s seed is recorded in the inspector, forever.</li>
+  </ul>
+
+  <h3>5.3 &ensp;The Variation Pattern</h3>
+
+  <p>The most productive pattern in the studio is the prompt-batch-seed loop:</p>
+
+  <ol>
+    <li>Write a prompt and generate a batch of four to eight images with random seeds.</li>
+    <li>Find the frame that is closest to what you wanted.</li>
+    <li>Click <strong>Use Seed</strong> in the inspector to lock that composition.</li>
+    <li>Refine the prompt &mdash; light, style, detail &mdash; and generate again on the same seed.</li>
+  </ol>
+
+  <p>The composition holds while your refinements land. Two or three loops like this converge on results that feel authored rather than found.</p>
+
+  <h3>5.4 &ensp;Seed Sweeps</h3>
+
+  <p>When you want to explore rather than refine, a seed sweep does the opposite: hold the prompt still and vary the seed. Set a fixed prompt, choose a count, and each image in the batch receives the next seed in sequence. Sweep seeds written down beside a prompt give you a map of that prompt&apos;s entire landscape &mdash; which compositions it can reach, and which it cannot.</p>
+
+  <h3>5.5 &ensp;Managing Large Batches</h3>
+
+  <ul>
+    <li>Pause the queue at any time; finished images are already in the gallery.</li>
+    <li>Cancel individual cards to keep the rest of the batch running.</li>
+    <li>Tag a batch with a label in the queue header so its images are grouped in the gallery and on disk.</li>
+    <li>Queue as many batches as you like &mdash; the studio renders strictly in order.</li>
+  </ul>
+
+  <div class="note">
+    <p><strong>Tip.</strong> Batch labels become folder names during export. Name them as you would name client deliverables, and your filing is done before you begin.</p>
+  </div>
+
+  <hr class="ornament-rule">
+</section>
