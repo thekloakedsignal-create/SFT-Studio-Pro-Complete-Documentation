@@ -1,0 +1,50 @@
+<section class="part" id="quick-reference">
+  <p class="kicker">Quick Reference</p>
+  <h2>The One-Page Cheat Sheet</h2>
+
+  <div class="part-intro">
+    <p>Everything in this manual, condensed. Keep this page open in a second window, or print it and pin it beside your screen.</p>
+  </div>
+
+  <h3>The Prompt Formula</h3>
+  <p><em>Subject</em> + <em>Setting</em> + <em>Light</em> + <em>Style</em>. Lead with what must not go wrong. Add one camera term if framing matters. Put exclusions in the negative prompt, not the prompt.</p>
+
+  <h3>Frames at a Glance</h3>
+  <p>
+    <span class="chip">1:1 Feed</span> <span class="chip">1.21:1 X</span> <span class="chip">4:5 Instagram</span>
+    <span class="chip">9:16 Stories</span> <span class="chip">2:3 Portrait</span> <span class="chip">16:9 Video &amp; T2V</span>
+    <span class="chip">1.85:1 Flat Cinema</span> <span class="chip">2.39:1 Scope</span> <span class="chip">21:9 Banner</span>
+  </p>
+
+  <h3>The Production Loop</h3>
+  <ol>
+    <li>Prompt &rarr; batch of 4&ndash;8 &rarr; random seeds.</li>
+    <li>Star the closest frame; lock its seed.</li>
+    <li>Refine light and style; regenerate on the locked seed.</li>
+    <li>Grade the keeper in the grading bay.</li>
+    <li>Upscale, export, and move to the next frame.</li>
+  </ol>
+
+  <h3>Seeds in Three Rules</h3>
+  <ul>
+    <li>Seed <code>-1</code> explores. A locked seed repeats.</li>
+    <li>Same prompt + same ratio + same seed = same image.</li>
+    <li>Every seed is recorded in the inspector. Trust it.</li>
+  </ul>
+
+  <h3>Essential Shortcuts</h3>
+  <p>
+    <kbd>Ctrl/⌘ + G</kbd> Generate &ensp;·&ensp;
+    <kbd>Ctrl/⌘ + E</kbd> Grade &ensp;·&ensp;
+    <kbd>Ctrl/⌘ + Shift + E</kbd> Export &ensp;·&ensp;
+    <kbd>1</kbd>&ndash;<kbd>5</kbd> Rate &ensp;·&ensp;
+    <kbd>Space</kbd> Pause queue
+  </p>
+
+  <h3>The Grading Order</h3>
+  <p>Exposure &amp; contrast &rarr; white balance &rarr; HSL &rarr; split toning &rarr; vignette &amp; grain. Judge the finished frame at fit-to-window.</p>
+
+  <div class="note">
+    <p><strong>The one rule above all.</strong> If a result matters, record its seed. Everything else in this manual can be looked up &mdash; a lost seed cannot.</p>
+  </div>
+</section>
